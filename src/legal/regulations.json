@@ -15,6 +15,20 @@
       "applicable_tactics": ["social_proof", "bandwagon", "authority"]
     },
     {
+      "id": "gdpr",
+      "name": "GDPR (Articles 5, 6, 22)",
+      "jurisdiction": "European Union",
+      "relevance": "Requires lawful basis for data processing. Article 22 protects against solely automated decision-making. Relevant when persuasive content is algorithmically targeted based on personal data profiling.",
+      "applicable_tactics": ["identity", "social_proof", "bandwagon"]
+    },
+    {
+      "id": "eu_ucpd",
+      "name": "EU Unfair Commercial Practices Directive (2005/29/EC)",
+      "jurisdiction": "European Union",
+      "relevance": "Prohibits misleading and aggressive commercial practices. Fabricated scarcity, false authority claims, and artificial urgency may constitute unfair practices.",
+      "applicable_tactics": ["scarcity", "urgency", "authority", "anchoring", "social_proof", "false_dilemma"]
+    },
+    {
       "id": "ftc_act_s5",
       "name": "US FTC Act Section 5",
       "jurisdiction": "United States",
@@ -22,24 +36,80 @@
       "applicable_tactics": ["scarcity", "urgency", "anchoring", "false_dilemma", "authority"]
     },
     {
-      "id": "gdpr_a22",
-      "name": "GDPR Article 22",
-      "jurisdiction": "European Union",
-      "relevance": "Right not to be subject to solely automated decision-making. Relevant when persuasive content is algorithmically targeted.",
+      "id": "us_ftc_endorsement",
+      "name": "US FTC Endorsement Guides (16 CFR Part 255)",
+      "jurisdiction": "United States",
+      "relevance": "Requires truthful endorsements and disclosures. Fake expert claims, fabricated testimonials, and undisclosed material connections violate these guidelines.",
+      "applicable_tactics": ["authority", "social_proof", "identity"]
+    },
+    {
+      "id": "us_ccpa",
+      "name": "California Consumer Privacy Act (CCPA/CPRA)",
+      "jurisdiction": "United States (California)",
+      "relevance": "Grants consumers rights over personal information used for profiling and targeted advertising. Relevant when persuasion tactics are algorithmically personalised.",
+      "applicable_tactics": ["identity", "social_proof"]
+    },
+    {
+      "id": "us_coppa",
+      "name": "US COPPA (Children's Online Privacy Protection Act)",
+      "jurisdiction": "United States",
+      "relevance": "Protects children under 13 from unfair data practices. Manipulative tactics targeting minors face heightened scrutiny.",
+      "applicable_tactics": ["fear_appeal", "emotional_manipulation", "bandwagon", "identity"]
+    },
+    {
+      "id": "ca_competition_act",
+      "name": "Canada Competition Act (Sections 52, 74)",
+      "jurisdiction": "Canada",
+      "relevance": "Prohibits false or misleading representations and deceptive marketing practices. Section 52 (criminal) and Section 74 (civil) cover false claims, misleading price representations, and deceptive performance claims.",
+      "applicable_tactics": ["scarcity", "urgency", "anchoring", "authority", "social_proof", "false_dilemma"]
+    },
+    {
+      "id": "ca_pipeda",
+      "name": "Canada PIPEDA / CPPA",
+      "jurisdiction": "Canada",
+      "relevance": "Governs collection, use, and disclosure of personal information in commercial activities. The proposed Consumer Privacy Protection Act (CPPA) strengthens enforcement with significant penalties. Relevant when persuasion is driven by personal data profiling.",
       "applicable_tactics": ["identity", "social_proof", "bandwagon"]
     },
     {
+      "id": "ca_casl",
+      "name": "Canada CASL (Anti-Spam Legislation)",
+      "jurisdiction": "Canada",
+      "relevance": "Prohibits sending commercial electronic messages without consent and installing software without consent. Requires clear identification and unsubscribe mechanisms. Deceptive subject lines and false sender information are prohibited.",
+      "applicable_tactics": ["urgency", "scarcity", "fear_appeal", "authority"]
+    },
+    {
+      "id": "ca_cpa_provincial",
+      "name": "Canadian Provincial Consumer Protection Acts",
+      "jurisdiction": "Canada (Provincial)",
+      "relevance": "Provincial consumer protection legislation (e.g., Ontario CPA, Quebec CPA, BC BPCPA) prohibits unfair practices, false representations, and unconscionable conduct in consumer transactions.",
+      "applicable_tactics": ["scarcity", "urgency", "anchoring", "false_dilemma", "fear_appeal", "authority"]
+    },
+    {
       "id": "aus_online_safety",
-      "name": "Australian Online Safety Act",
+      "name": "Australian Online Safety Act 2021",
       "jurisdiction": "Australia",
-      "relevance": "Covers deceptive design patterns and harmful online content.",
+      "relevance": "Covers deceptive design patterns and harmful online content. The eSafety Commissioner has powers to investigate and enforce removal of harmful material.",
       "applicable_tactics": ["fear_appeal", "emotional_manipulation", "false_dilemma"]
     },
     {
-      "id": "aus_cdr",
-      "name": "Consumer Data Right (CDR)",
+      "id": "aus_acl",
+      "name": "Australian Consumer Law (Schedule 2, CCA 2010)",
       "jurisdiction": "Australia",
-      "relevance": "Data transparency obligations relevant to how user behavioural data drives persuasive targeting.",
+      "relevance": "Prohibits misleading or deceptive conduct (Section 18), unconscionable conduct (Sections 20-22), and false representations (Sections 29-37). Covers unfair contract terms and product safety.",
+      "applicable_tactics": ["scarcity", "urgency", "anchoring", "authority", "social_proof", "false_dilemma", "fear_appeal"]
+    },
+    {
+      "id": "aus_privacy_act",
+      "name": "Australian Privacy Act 1988 (APPs)",
+      "jurisdiction": "Australia",
+      "relevance": "Australian Privacy Principles govern collection, use, disclosure, and security of personal information. Relevant when persuasion is driven by personal data profiling or behavioural targeting.",
+      "applicable_tactics": ["identity", "social_proof"]
+    },
+    {
+      "id": "aus_cdr",
+      "name": "Australian Consumer Data Right (CDR)",
+      "jurisdiction": "Australia",
+      "relevance": "Data transparency obligations for how consumer behavioural data is collected, used, and shared. Relevant in banking, energy, and telecommunications contexts.",
       "applicable_tactics": ["identity", "social_proof"]
     }
   ]

@@ -1,0 +1,19 @@
+{
+  "tactic": "reciprocity",
+  "neural_weight": 1.5,
+  "brain_region": "Striatum, Orbitofrontal Cortex",
+  "tribe_v2_insight": "Perceived generosity activates reward pathways in the striatum, creating an implicit sense of social obligation",
+  "patterns": [
+    { "regex": "\\b(we\\s+gave\\s+you|we've\\s+given\\s+you|we\\s+provided\\s+you)\\b", "confidence": 0.85 },
+    { "regex": "\\b(free\\s+(gift|bonus|trial|sample|access))\\b", "confidence": 0.82 },
+    { "regex": "\\b(complimentary|on\\s+the\\s+house|at\\s+no\\s+cost)\\b", "confidence": 0.78 },
+    { "regex": "\\b(as\\s+a\\s+thank\\s+you|to\\s+show\\s+our\\s+(gratitude|appreciation))\\b", "confidence": 0.85 },
+    { "regex": "\\b(we've\\s+done\\s+.{1,20}\\s+for\\s+you)\\b", "confidence": 0.80 },
+    { "regex": "\\b(after\\s+everything\\s+we|all\\s+we've\\s+done)\\b", "confidence": 0.85 },
+    { "regex": "\\b(you\\s+owe\\s+it\\s+to)\\b", "confidence": 0.88 },
+    { "regex": "\\b(in\\s+return|return\\s+the\\s+favo[u]?r)\\b", "confidence": 0.82 },
+    { "regex": "\\b(exclusive\\s+gift\\s+for\\s+you|just\\s+for\\s+you)\\b", "confidence": 0.78 }
+  ],
+  "user_explanation": "This triggers reciprocity — the social obligation to return a favour. When someone gives you something (even unsolicited), your brain's reward pathways create pressure to reciprocate, which can be exploited to drive actions you wouldn't otherwise take.",
+  "legal_note": "Reciprocity tactics combined with hidden obligations may constitute unfair commercial practices under the EU Unfair Commercial Practices Directive."
+}

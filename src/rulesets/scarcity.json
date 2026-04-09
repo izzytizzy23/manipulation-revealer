@@ -1,0 +1,20 @@
+{
+  "tactic": "scarcity",
+  "neural_weight": 2.8,
+  "brain_region": "Amygdala, Insula",
+  "tribe_v2_insight": "Loss-framed stimuli produce strong amygdala activation, bypassing rational evaluation",
+  "patterns": [
+    { "regex": "\\b(only|just)\\s+\\d+\\s+(left|remaining|available|spots?)\\b", "confidence": 0.95 },
+    { "regex": "\\b(limited\\s+(time|offer|stock|edition|supply|availability))\\b", "confidence": 0.90 },
+    { "regex": "\\b(running\\s+out|selling\\s+fast|almost\\s+gone|while\\s+supplies\\s+last)\\b", "confidence": 0.88 },
+    { "regex": "\\b(won't\\s+last|last\\s+chance|final\\s+(call|offer|opportunity))\\b", "confidence": 0.85 },
+    { "regex": "\\b(exclusive\\s+(access|deal|offer)|members\\s+only)\\b", "confidence": 0.75 },
+    { "regex": "\\b(before\\s+(they're|it's)\\s+gone)\\b", "confidence": 0.85 },
+    { "regex": "\\b(few\\s+(remaining|left)|scarce|rare\\s+opportunity)\\b", "confidence": 0.80 },
+    { "regex": "\\b(first\\s+come\\s+first\\s+serve[d]?)\\b", "confidence": 0.85 },
+    { "regex": "\\b(going\\s+fast|selling\\s+out|high\\s+demand)\\b", "confidence": 0.78 },
+    { "regex": "\\b(one\\s+time\\s+only|once\\s+in\\s+a\\s+lifetime)\\b", "confidence": 0.82 }
+  ],
+  "user_explanation": "This uses scarcity framing. By suggesting limited availability, it activates your brain's loss-aversion response, making you feel you'll miss out. This can push you toward quick decisions without full consideration.",
+  "legal_note": "Fabricated scarcity claims may violate FTC guidelines on deceptive advertising and EU consumer protection directives."
+}

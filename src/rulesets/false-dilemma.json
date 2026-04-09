@@ -1,0 +1,20 @@
+{
+  "tactic": "false_dilemma",
+  "neural_weight": 2.3,
+  "brain_region": "Dorsolateral Prefrontal Cortex",
+  "tribe_v2_insight": "Binary framing reduces activation in complex reasoning areas of the dorsolateral prefrontal cortex, simplifying evaluation to a forced choice",
+  "patterns": [
+    { "regex": "\\b(either\\s+.{1,30}\\s+or\\s+.{1,30}(fail|lose|die|suffer))\\b", "confidence": 0.88 },
+    { "regex": "\\b(you're\\s+either\\s+with\\s+us\\s+or\\s+against\\s+us)\\b", "confidence": 0.95 },
+    { "regex": "\\b(the\\s+only\\s+(option|choice|way|solution|answer))\\b", "confidence": 0.85 },
+    { "regex": "\\b(there'?s\\s+no\\s+(other|alternative)\\s+(way|option|choice))\\b", "confidence": 0.88 },
+    { "regex": "\\b(if\\s+you\\s+don't\\s+.{1,20}\\s+then\\s+.{1,20}(fail|lose|suffer|die))\\b", "confidence": 0.85 },
+    { "regex": "\\b(you\\s+must\\s+choose|pick\\s+a\\s+side)\\b", "confidence": 0.82 },
+    { "regex": "\\b(it'?s\\s+now\\s+or\\s+never|do\\s+or\\s+die)\\b", "confidence": 0.88 },
+    { "regex": "\\b(no\\s+alternative|no\\s+other\\s+(choice|option))\\b", "confidence": 0.85 },
+    { "regex": "\\b(two\\s+choices|only\\s+two\\s+(options|paths|ways))\\b", "confidence": 0.80 },
+    { "regex": "\\b(you\\s+can\\s+(either|only))\\b", "confidence": 0.72 }
+  ],
+  "user_explanation": "This presents a false dilemma — forcing you to choose between two options when more alternatives actually exist. By reducing a complex situation to a binary choice, it suppresses your brain's ability to explore nuanced solutions and pressures you into a predetermined conclusion.",
+  "legal_note": "False dilemma framing in regulated contexts (financial products, health services) may constitute misleading information under FTC Act Section 5 and EU consumer protection law."
+}

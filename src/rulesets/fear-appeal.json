@@ -1,0 +1,22 @@
+{
+  "tactic": "fear_appeal",
+  "neural_weight": 3.0,
+  "brain_region": "Amygdala, Anterior Insula",
+  "tribe_v2_insight": "High-arousal negative stimuli produce strong, fast amygdala activations that bypass deliberative reasoning centres",
+  "patterns": [
+    { "regex": "\\b(you\\s+could\\s+lose\\s+everything)\\b", "confidence": 0.95 },
+    { "regex": "\\b(dangerous|deadly|fatal|catastrophic|devastating)\\b", "confidence": 0.78 },
+    { "regex": "\\b(warning|alert|caution|beware|watch\\s+out)\\b", "confidence": 0.75 },
+    { "regex": "\\b(threat(en)?|risk\\s+(losing|of)|endanger)\\b", "confidence": 0.82 },
+    { "regex": "\\b(protect\\s+(yourself|your\\s+family|your\\s+money|your\\s+health))\\b", "confidence": 0.85 },
+    { "regex": "\\b(before\\s+it'?s\\s+too\\s+late)\\b", "confidence": 0.88 },
+    { "regex": "\\b(devastating\\s+(consequences|effects?|impact|results?))\\b", "confidence": 0.90 },
+    { "regex": "\\b(don't\\s+become\\s+a\\s+victim)\\b", "confidence": 0.88 },
+    { "regex": "\\b(your\\s+safety\\s+is\\s+at\\s+risk|your\\s+life\\s+depends)\\b", "confidence": 0.92 },
+    { "regex": "\\b(terrifying|horrifying|nightmare|crisis|emergency)\\b", "confidence": 0.78 },
+    { "regex": "\\b(you\\s+(will|could|might)\\s+(die|suffer|lose|fail))\\b", "confidence": 0.85 },
+    { "regex": "\\b(the\\s+truth\\s+(they|big\\s+pharma|the\\s+government)\\s+(don't|doesn't)\\s+want)\\b", "confidence": 0.88 }
+  ],
+  "user_explanation": "This uses fear to trigger your brain's threat-detection system. Fear appeals activate the amygdala, producing fast emotional responses that can override rational analysis — pushing you toward impulsive protective actions.",
+  "legal_note": "Fear-based manipulation in advertising is scrutinised under the FTC Act, and fear-based AI manipulation is classified as 'unacceptable risk' under EU AI Act Article 5."
+}

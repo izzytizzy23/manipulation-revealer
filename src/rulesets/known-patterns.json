@@ -1,0 +1,46 @@
+{
+  "patterns": [
+    {
+      "name": "Crypto/Investment Pump",
+      "description": "Detects urgency + scarcity + social proof appearing together in crypto/investment context",
+      "requiredTactics": ["urgency", "scarcity", "social_proof"],
+      "contextType": "financial",
+      "severity": "high"
+    },
+    {
+      "name": "Phishing Lure",
+      "description": "Detects authority + urgency + fear appeal combined with action demands",
+      "requiredTactics": ["authority", "urgency", "fear_appeal"],
+      "contextType": "neutral",
+      "severity": "high"
+    },
+    {
+      "name": "Health Misinformation",
+      "description": "Detects authority + fear appeal + false dilemma in health/medical context",
+      "requiredTactics": ["authority", "fear_appeal", "false_dilemma"],
+      "contextType": "health",
+      "severity": "high"
+    },
+    {
+      "name": "Romance Scam",
+      "description": "Detects emotional manipulation + reciprocity + urgency in personal/financial context",
+      "requiredTactics": ["emotional_manipulation", "reciprocity", "urgency"],
+      "contextType": "neutral",
+      "severity": "high"
+    },
+    {
+      "name": "Get-Rich-Quick Scheme",
+      "description": "Detects authority + social proof + anchoring + urgency in financial context",
+      "requiredTactics": ["authority", "social_proof", "anchoring", "urgency"],
+      "contextType": "financial",
+      "severity": "high"
+    },
+    {
+      "name": "Fear-Based Conversion",
+      "description": "Detects fear appeal + scarcity + false dilemma designed to force immediate action",
+      "requiredTactics": ["fear_appeal", "scarcity", "false_dilemma"],
+      "contextType": "neutral",
+      "severity": "high"
+    }
+  ]
+}

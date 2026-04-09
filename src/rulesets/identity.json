@@ -1,0 +1,20 @@
+{
+  "tactic": "identity",
+  "neural_weight": 1.8,
+  "brain_region": "Medial Prefrontal Cortex",
+  "tribe_v2_insight": "Self-relevant stimuli produce unique neural fingerprints in medial prefrontal regions, increasing engagement and reducing critical evaluation",
+  "patterns": [
+    { "regex": "\\b(people\\s+like\\s+you|someone\\s+like\\s+you)\\b", "confidence": 0.88 },
+    { "regex": "\\b(smart\\s+(people|investors?|buyers?)\\s+(know|choose|understand))\\b", "confidence": 0.85 },
+    { "regex": "\\b(real\\s+(men|women|patriots?|Americans?|professionals?))\\b", "confidence": 0.82 },
+    { "regex": "\\b(true\\s+(patriots?|believers?|professionals?|leaders?))\\b", "confidence": 0.82 },
+    { "regex": "\\b(as\\s+a\\s+(parent|mother|father|professional|leader|entrepreneur))\\b", "confidence": 0.78 },
+    { "regex": "\\b(you're\\s+the\\s+(type|kind)\\s+(of\\s+person\\s+)?who)\\b", "confidence": 0.85 },
+    { "regex": "\\b(those\\s+who\\s+(understand|get\\s+it|know\\s+better))\\b", "confidence": 0.80 },
+    { "regex": "\\b(for\\s+(winners?|leaders?|go[- ]getters?|visionaries))\\b", "confidence": 0.78 },
+    { "regex": "\\b(if\\s+you're\\s+(serious|smart|savvy)\\s+about)\\b", "confidence": 0.82 },
+    { "regex": "\\b(not\\s+for\\s+everyone|only\\s+for\\s+the\\s+(bold|brave|serious))\\b", "confidence": 0.80 }
+  ],
+  "user_explanation": "This targets your sense of identity, making you feel the message is personally relevant to who you are. By linking a choice to your self-image, it bypasses objective evaluation — you respond to protect or affirm your identity rather than assess the content critically.",
+  "legal_note": "Identity-based targeting combined with algorithmic profiling raises concerns under GDPR Article 22 and the EU AI Act's provisions on subliminal manipulation."
+}

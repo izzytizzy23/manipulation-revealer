@@ -1,0 +1,21 @@
+{
+  "tactic": "loaded_language",
+  "neural_weight": 1.2,
+  "brain_region": "Temporal Cortex, Language Areas",
+  "tribe_v2_insight": "Superlative and hyperbolic language produces elevated semantic activation in temporal language areas, priming emotional rather than analytical processing",
+  "patterns": [
+    { "regex": "\\b(revolutionary|game[- ]chang(er|ing))\\b", "confidence": 0.82 },
+    { "regex": "\\b(unprecedented|never[- ]before[- ]seen|first[- ]of[- ]its[- ]kind)\\b", "confidence": 0.80 },
+    { "regex": "\\b(incredible|unbelievable|extraordinary|phenomenal)\\b", "confidence": 0.72 },
+    { "regex": "\\b(amazing|insane|mind[- ]blowing|jaw[- ]dropping)\\b", "confidence": 0.72 },
+    { "regex": "\\b(life[- ]changing|world[- ]changing|earth[- ]shattering)\\b", "confidence": 0.82 },
+    { "regex": "\\b(breakthrough|disruptive|transformative|paradigm[- ]shift)\\b", "confidence": 0.78 },
+    { "regex": "\\b(ultimate|absolute|total|complete|pure)\\s+(game[- ]changer|solution|freedom|control)\\b", "confidence": 0.80 },
+    { "regex": "\\b(destroy|crush|demolish|obliterate|annihilate)\\s+(the\\s+)?(competition|market|industry)\\b", "confidence": 0.82 },
+    { "regex": "\\b(genius|brilliant|legendary|epic|iconic)\\b", "confidence": 0.70 },
+    { "regex": "\\b(miracle|magic|secret|forbidden|hidden)\\b", "confidence": 0.75 },
+    { "regex": "\\b(100%|guaranteed|proven|fool[- ]proof|risk[- ]free)\\b", "confidence": 0.80 }
+  ],
+  "user_explanation": "This uses loaded language — emotionally charged words designed to impress rather than inform. Superlatives and hyperbole prime your brain's language areas for emotional processing, making claims feel more significant than they may actually be.",
+  "legal_note": "Unsubstantiated superlative claims in advertising may violate FTC truth-in-advertising standards. Words like 'guaranteed' and 'proven' require substantiation."
+}

@@ -1,0 +1,20 @@
+{
+  "tactic": "bandwagon",
+  "neural_weight": 1.5,
+  "brain_region": "Ventral Striatum",
+  "tribe_v2_insight": "Social reward signals from group inclusion cues activate the ventral striatum, triggering FOMO responses",
+  "patterns": [
+    { "regex": "\\b(trending\\s+now|currently\\s+trending)\\b", "confidence": 0.85 },
+    { "regex": "\\b(everyone'?s\\s+talking\\s+about)\\b", "confidence": 0.88 },
+    { "regex": "\\b(going\\s+viral|gone\\s+viral|breaking\\s+the\\s+internet)\\b", "confidence": 0.85 },
+    { "regex": "\\b(don't\\s+miss\\s+out|miss\\s+out\\s+on|you'll\\s+miss)\\b", "confidence": 0.88 },
+    { "regex": "\\b(fomo|fear\\s+of\\s+missing\\s+out)\\b", "confidence": 0.90 },
+    { "regex": "\\b(don't\\s+be\\s+left\\s+behind|left\\s+behind)\\b", "confidence": 0.85 },
+    { "regex": "\\b(join\\s+the\\s+(movement|revolution|wave|trend))\\b", "confidence": 0.82 },
+    { "regex": "\\b(the\\s+world\\s+is\\s+watching|everybody'?s\\s+doing\\s+it)\\b", "confidence": 0.80 },
+    { "regex": "\\b(get\\s+on\\s+board|hop\\s+on|jump\\s+on\\s+the)\\b", "confidence": 0.78 },
+    { "regex": "\\b(this\\s+is\\s+(huge|massive|exploding)|blowing\\s+up)\\b", "confidence": 0.75 }
+  ],
+  "user_explanation": "This exploits the bandwagon effect — the desire to join what's popular. By signalling that something is trending or that you'll be left out, it activates FOMO through your brain's social reward pathways, pressuring you to conform rather than evaluate independently.",
+  "legal_note": "Artificially manufactured virality and fake trend indicators may violate the EU Digital Services Act's transparency requirements."
+}

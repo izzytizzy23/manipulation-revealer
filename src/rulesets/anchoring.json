@@ -1,0 +1,20 @@
+{
+  "tactic": "anchoring",
+  "neural_weight": 1.7,
+  "brain_region": "Intraparietal Sulcus",
+  "tribe_v2_insight": "The first numerical stimulus anchors subsequent evaluation in the intraparietal sulcus, biasing perceived value",
+  "patterns": [
+    { "regex": "\\b(was|originally|normally|usually)\\s+\\$[\\d,.]+\\s*(,|—|-)\\s*(now|today|only)\\s+\\$[\\d,.]+\\b", "confidence": 0.95 },
+    { "regex": "\\b(valued?\\s+at\\s+\\$[\\d,.]+)\\b", "confidence": 0.85 },
+    { "regex": "\\b(compare\\s+at\\s+\\$[\\d,.]+)\\b", "confidence": 0.85 },
+    { "regex": "\\b(retail\\s+price\\s+\\$[\\d,.]+)\\b", "confidence": 0.82 },
+    { "regex": "\\b(save\\s+(up\\s+to\\s+)?\\d+%)\\b", "confidence": 0.80 },
+    { "regex": "\\b(\\d+%\\s+off)\\b", "confidence": 0.78 },
+    { "regex": "\\b(marked\\s+down\\s+from|reduced\\s+from|slashed\\s+from)\\b", "confidence": 0.85 },
+    { "regex": "\\b(\\$[\\d,.]+\\s+value\\s+(for|at)\\s+(only|just)\\s+\\$[\\d,.]+)\\b", "confidence": 0.92 },
+    { "regex": "\\b(price\\s+(was|used\\s+to\\s+be|dropped\\s+from))\\b", "confidence": 0.82 },
+    { "regex": "\\b(you\\s+save|saving\\s+you)\\s+\\$[\\d,.]+\\b", "confidence": 0.80 }
+  ],
+  "user_explanation": "This uses anchoring — presenting a high initial number to make a lower number seem like a bargain. Your brain's numerical processing automatically compares against the first figure, making the 'deal' feel more valuable than it may actually be.",
+  "legal_note": "Inflated original prices and fake discounts violate FTC pricing guidelines and the EU Consumer Rights Directive's requirements for genuine price reductions."
+}

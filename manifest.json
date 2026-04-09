@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "Persuasion Shield",
+  "version": "1.0.0",
+  "description": "Real-time persuasion tactic detection in social media feeds — informed by TRIBE v2 neuroscience research",
+  "permissions": ["activeTab", "storage"],
+  "host_permissions": [
+    "https://twitter.com/*",
+    "https://x.com/*",
+    "https://www.reddit.com/*",
+    "https://www.linkedin.com/*",
+    "https://www.facebook.com/*"
+  ],
+  "background": {
+    "service_worker": "dist/background/service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*",
+        "https://www.reddit.com/*",
+        "https://www.linkedin.com/*",
+        "https://www.facebook.com/*"
+      ],
+      "js": ["dist/content/content-script.js"],
+      "css": ["assets/styles/highlight.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    }
+  },
+  "options_page": "src/options/options.html",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}

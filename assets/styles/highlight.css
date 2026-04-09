@@ -1,0 +1,10 @@
+.ps-highlight-underline { border-bottom: 2px solid; text-decoration: none; cursor: pointer; }
+.ps-highlight-background { border-radius: 2px; cursor: pointer; padding: 1px 2px; }
+.ps-highlight-border { border: 1px solid; border-radius: 3px; cursor: pointer; padding: 0 2px; }
+.ps-risk-low { border-color: #4CAF50; background-color: rgba(76, 175, 80, 0.1); }
+.ps-risk-medium { border-color: #FF9800; background-color: rgba(255, 152, 0, 0.1); }
+.ps-risk-high { border-color: #F44336; background-color: rgba(244, 67, 54, 0.1); }
+.ps-badge { display: inline-flex; align-items: center; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 600; margin-left: 8px; }
+.ps-badge-low { background: #4CAF50; color: white; }
+.ps-badge-medium { background: #FF9800; color: white; }
+.ps-badge-high { background: #F44336; color: white; }

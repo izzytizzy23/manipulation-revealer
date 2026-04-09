@@ -1,0 +1,46 @@
+{
+  "regulations": [
+    {
+      "id": "eu_ai_act",
+      "name": "EU AI Act (2024)",
+      "jurisdiction": "European Union",
+      "relevance": "Classifies AI systems that manipulate behaviour as unacceptable risk (Article 5). Subliminal techniques that materially distort behaviour are prohibited.",
+      "applicable_tactics": ["fear_appeal", "emotional_manipulation", "false_dilemma", "scarcity", "urgency"]
+    },
+    {
+      "id": "eu_dsa",
+      "name": "EU Digital Services Act",
+      "jurisdiction": "European Union",
+      "relevance": "Requires very large platforms to assess systemic risks including manipulation. Mandates transparency in algorithmic recommendation.",
+      "applicable_tactics": ["social_proof", "bandwagon", "authority"]
+    },
+    {
+      "id": "ftc_act_s5",
+      "name": "US FTC Act Section 5",
+      "jurisdiction": "United States",
+      "relevance": "Prohibits unfair or deceptive acts. Dark patterns enforcement is active and expanding.",
+      "applicable_tactics": ["scarcity", "urgency", "anchoring", "false_dilemma", "authority"]
+    },
+    {
+      "id": "gdpr_a22",
+      "name": "GDPR Article 22",
+      "jurisdiction": "European Union",
+      "relevance": "Right not to be subject to solely automated decision-making. Relevant when persuasive content is algorithmically targeted.",
+      "applicable_tactics": ["identity", "social_proof", "bandwagon"]
+    },
+    {
+      "id": "aus_online_safety",
+      "name": "Australian Online Safety Act",
+      "jurisdiction": "Australia",
+      "relevance": "Covers deceptive design patterns and harmful online content.",
+      "applicable_tactics": ["fear_appeal", "emotional_manipulation", "false_dilemma"]
+    },
+    {
+      "id": "aus_cdr",
+      "name": "Consumer Data Right (CDR)",
+      "jurisdiction": "Australia",
+      "relevance": "Data transparency obligations relevant to how user behavioural data drives persuasive targeting.",
+      "applicable_tactics": ["identity", "social_proof"]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "tactic": "urgency",
+  "neural_weight": 2.5,
+  "brain_region": "Ventromedial Prefrontal Cortex",
+  "tribe_v2_insight": "Time-pressure stimuli reduce deliberative processing, shifting decision-making to heuristic pathways",
+  "patterns": [
+    { "regex": "\\b(act|buy|sign\\s+up|register|order)\\s+(now|immediately|today)\\b", "confidence": 0.92 },
+    { "regex": "\\b(hurry|rush|quick|fast)\\b", "confidence": 0.72 },
+    { "regex": "\\b(don't\\s+wait|don't\\s+delay|don't\\s+hesitate)\\b", "confidence": 0.88 },
+    { "regex": "\\b(expires?\\s+(soon|today|tonight|tomorrow|in\\s+\\d+))\\b", "confidence": 0.90 },
+    { "regex": "\\b(time\\s+is\\s+running\\s+out|clock\\s+is\\s+ticking)\\b", "confidence": 0.92 },
+    { "regex": "\\b(before\\s+it'?s\\s+too\\s+late)\\b", "confidence": 0.88 },
+    { "regex": "\\b(right\\s+now|immediately|this\\s+instant)\\b", "confidence": 0.75 },
+    { "regex": "\\b(deadline|countdown|hours?\\s+left|minutes?\\s+left)\\b", "confidence": 0.85 },
+    { "regex": "\\b(today\\s+only|ends?\\s+tonight|last\\s+day)\\b", "confidence": 0.90 },
+    { "regex": "\\b(now\\s+or\\s+never|time\\s+sensitive)\\b", "confidence": 0.88 },
+    { "regex": "\\b(offer\\s+ends|sale\\s+ends|closing\\s+soon)\\b", "confidence": 0.85 }
+  ],
+  "user_explanation": "This creates artificial time pressure to force quick decisions. By making you feel you must act immediately, it bypasses your ability to think carefully and compare alternatives.",
+  "legal_note": "False urgency claims (e.g., fake countdown timers) are classified as dark patterns under the FTC's enforcement actions and the EU Digital Services Act."
+}

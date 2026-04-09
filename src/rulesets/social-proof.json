@@ -1,0 +1,20 @@
+{
+  "tactic": "social_proof",
+  "neural_weight": 1.8,
+  "brain_region": "Medial Prefrontal Cortex, Temporoparietal Junction",
+  "tribe_v2_insight": "Social stimuli activate distinct neural signatures in areas responsible for theory of mind and social cognition",
+  "patterns": [
+    { "regex": "\\b(millions?|thousands?|hundreds?)\\s+(of\\s+)?(people|users|customers|subscribers|members)\\b", "confidence": 0.88 },
+    { "regex": "\\b(everyone\\s+(is|loves?|knows?|agrees?|wants?))\\b", "confidence": 0.85 },
+    { "regex": "\\b(join\\s+(\\d[\\d,]*\\+?|millions?|thousands?)\\s+(others?|people|users))\\b", "confidence": 0.90 },
+    { "regex": "\\b(most\\s+popular|best[- ]selling|top[- ]rated|highest[- ]rated)\\b", "confidence": 0.82 },
+    { "regex": "\\b(trusted\\s+by|used\\s+by|loved\\s+by|endorsed\\s+by)\\b", "confidence": 0.80 },
+    { "regex": "\\b(as\\s+seen\\s+(on|in)|featured\\s+(on|in))\\b", "confidence": 0.78 },
+    { "regex": "\\b(people\\s+are\\s+(switching|moving|choosing|buying))\\b", "confidence": 0.82 },
+    { "regex": "\\b(\\d+%\\s+of\\s+(people|users|customers)\\s+(agree|prefer|recommend|choose))\\b", "confidence": 0.88 },
+    { "regex": "\\b(\\d[\\d,]*\\+?\\s+(reviews?|ratings?|downloads?|sold))\\b", "confidence": 0.75 },
+    { "regex": "\\b(social\\s+proof|what\\s+others\\s+are\\s+(saying|doing|buying))\\b", "confidence": 0.85 }
+  ],
+  "user_explanation": "This uses social proof — suggesting that many others have already made this choice. It leverages your brain's social conformity mechanisms, making you feel safer following the crowd rather than evaluating independently.",
+  "legal_note": "Fabricated social proof (fake reviews, inflated user counts) violates FTC Act Section 5 and the EU Unfair Commercial Practices Directive."
+}

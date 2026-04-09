@@ -1,0 +1,20 @@
+{
+  "tactic": "emotional_manipulation",
+  "neural_weight": 2.2,
+  "brain_region": "Mirror Neuron System, Insula",
+  "tribe_v2_insight": "High empathy activation for narrative emotional content engages the mirror neuron system, reducing critical distance",
+  "patterns": [
+    { "regex": "\\b(heartbreaking|heart[- ]wrenching|heart[- ]breaking)\\b", "confidence": 0.88 },
+    { "regex": "\\b(devastating|gut[- ]wrenching|soul[- ]crushing|gut[- ]punch)\\b", "confidence": 0.85 },
+    { "regex": "\\b(brings?\\s+tears|made\\s+(me|us)\\s+cry|tears\\s+in\\s+(my|our)\\s+eyes)\\b", "confidence": 0.90 },
+    { "regex": "\\b(unbelievable\\s+story|incredible\\s+story|you\\s+won't\\s+believe)\\b", "confidence": 0.82 },
+    { "regex": "\\b(shocking\\s+(truth|story|revelation)|jaw[- ]dropping)\\b", "confidence": 0.80 },
+    { "regex": "\\b(this\\s+will\\s+make\\s+you\\s+(cry|angry|furious|sick))\\b", "confidence": 0.90 },
+    { "regex": "\\b(emotional|heart[- ]warming|touching\\s+story|moved\\s+to\\s+tears)\\b", "confidence": 0.75 },
+    { "regex": "\\b(think\\s+of\\s+the\\s+children|won't\\s+someone\\s+think)\\b", "confidence": 0.88 },
+    { "regex": "\\b(breaks?\\s+my\\s+heart|makes?\\s+me\\s+sick|I\\s+(can't|couldn't)\\s+stop\\s+crying)\\b", "confidence": 0.82 },
+    { "regex": "\\b(how\\s+could\\s+(anyone|they)|what\\s+kind\\s+of\\s+person)\\b", "confidence": 0.78 }
+  ],
+  "user_explanation": "This uses emotional manipulation to override rational thinking. By triggering strong empathy or outrage, it engages your mirror neuron system and reduces your critical distance — making you more likely to share, react, or comply without questioning the content's accuracy or intent.",
+  "legal_note": "Emotionally manipulative content designed to distort behaviour may fall under the EU AI Act's prohibition on subliminal manipulation techniques (Article 5)."
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "text": "Had a great lunch with friends today. The weather was nice.",
+    "expected_tactics": [],
+    "expected_risk": "low"
+  },
+  {
+    "text": "Just finished reading a really good book about history. Would recommend it to anyone interested in the topic.",
+    "expected_tactics": [],
+    "expected_risk": "low"
+  },
+  {
+    "text": "Our team meeting went well. We discussed the Q3 roadmap and assigned tasks.",
+    "expected_tactics": [],
+    "expected_risk": "low"
+  },
+  {
+    "text": "This is not a limited time offer. Take your time to decide.",
+    "expected_tactics": [],
+    "expected_risk": "low"
+  },
+  {
+    "text": "The concert last night was amazing. Great performance by the band.",
+    "expected_tactics": [],
+    "expected_risk": "low"
+  },
+  {
+    "text": "I went grocery shopping and picked up some vegetables for dinner tonight.",
+    "expected_tactics": [],
+    "expected_risk": "low"
+  },
+  {
+    "text": "Happy birthday to my friend! Hope you have a wonderful day.",
+    "expected_tactics": [],
+    "expected_risk": "low"
+  }
+]

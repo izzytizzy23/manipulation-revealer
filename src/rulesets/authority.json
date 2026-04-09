@@ -1,0 +1,20 @@
+{
+  "tactic": "authority",
+  "neural_weight": 2.0,
+  "brain_region": "Anterior Cingulate Cortex",
+  "tribe_v2_insight": "Authority cues shift neural evaluation from analytical processing to heuristic trust pathways",
+  "patterns": [
+    { "regex": "\\b(experts?\\s+(say|agree|recommend|confirm|warn|believe))\\b", "confidence": 0.90 },
+    { "regex": "\\b(studies?\\s+(show|prove|confirm|reveal|demonstrate|suggest))\\b", "confidence": 0.88 },
+    { "regex": "\\b(scientifically\\s+(proven|backed|tested|validated))\\b", "confidence": 0.92 },
+    { "regex": "\\b(doctor[- ]?(recommended|approved|endorsed)|clinically\\s+(proven|tested))\\b", "confidence": 0.90 },
+    { "regex": "\\b(research\\s+(confirms?|shows?|proves?|reveals?))\\b", "confidence": 0.85 },
+    { "regex": "\\b(according\\s+to\\s+(experts?|scientists?|researchers?|doctors?|studies))\\b", "confidence": 0.88 },
+    { "regex": "\\b(endorsed\\s+by|backed\\s+by|approved\\s+by|certified\\s+by)\\b", "confidence": 0.82 },
+    { "regex": "\\b(award[- ]winning|industry[- ]leading|world[- ]class|board[- ]certified)\\b", "confidence": 0.75 },
+    { "regex": "\\b(as\\s+recommended\\s+by|Nobel|Harvard|Stanford|MIT|PhD)\\b", "confidence": 0.78 },
+    { "regex": "\\b(leading\\s+(experts?|authorities?|scientists?|researchers?))\\b", "confidence": 0.82 }
+  ],
+  "user_explanation": "This appeals to authority to bypass your own judgment. By invoking experts or studies, it encourages you to accept claims without questioning the evidence directly — shifting your brain from analytical to trust-based evaluation.",
+  "legal_note": "Unsubstantiated expert claims and fake endorsements violate FTC endorsement guidelines and may breach the EU Unfair Commercial Practices Directive."
+}

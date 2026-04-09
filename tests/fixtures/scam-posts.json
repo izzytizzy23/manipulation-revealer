@@ -1,0 +1,37 @@
+[
+  {
+    "text": "ONLY 3 SPOTS LEFT! Join 50,000+ investors who've already made 300% returns. Act NOW before this exclusive opportunity disappears forever!",
+    "expected_tactics": ["scarcity", "social_proof", "urgency", "loaded_language"],
+    "expected_risk": "high"
+  },
+  {
+    "text": "WARNING: Your account may be compromised. Experts confirm this is a critical security threat. Click here immediately to verify your identity or risk losing everything.",
+    "expected_tactics": ["fear_appeal", "authority", "urgency"],
+    "expected_risk": "high"
+  },
+  {
+    "text": "This heartbreaking story of a single mother will make you cry. She lost everything because she didn't act when she had the chance. Don't make the same mistake.",
+    "expected_tactics": ["emotional_manipulation", "fear_appeal", "urgency"],
+    "expected_risk": "high"
+  },
+  {
+    "text": "Bitcoin is going to $500k. Everyone knows it. Smart investors are loading up NOW. Was $100k, now still a bargain. You're either in or you're left behind.",
+    "expected_tactics": ["authority", "bandwagon", "urgency", "anchoring", "false_dilemma"],
+    "expected_risk": "high"
+  },
+  {
+    "text": "Limited time offer: Revolutionary new supplement that doctors don't want you to know about. Guaranteed to cure your condition or your money back. Only available for the next 24 hours.",
+    "expected_tactics": ["scarcity", "urgency", "loaded_language", "authority"],
+    "expected_risk": "high"
+  },
+  {
+    "text": "People like you are already seeing 500% ROI. This is the only option if you're serious about financial freedom. Don't wait — this offer expires tonight.",
+    "expected_tactics": ["identity", "social_proof", "false_dilemma", "urgency", "scarcity"],
+    "expected_risk": "high"
+  },
+  {
+    "text": "After everything we've done for you, we're giving you one last chance. As a thank you, here's an exclusive deal that won't last. Act now or lose it forever.",
+    "expected_tactics": ["reciprocity", "scarcity", "urgency", "fear_appeal"],
+    "expected_risk": "high"
+  }
+]

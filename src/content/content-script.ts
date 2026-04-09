@@ -25,10 +25,22 @@ function detectPlatform(): PlatformConfig | null {
   ) || null;
 }
 
+function isValidSettings(data: unknown): data is UserSettings {
+  if (!data || typeof data !== 'object') return false;
+  const obj = data as Record<string, unknown>;
+  return (
+    typeof obj.enabled === 'boolean' &&
+    typeof obj.sensitivityThreshold === 'number' &&
+    obj.sensitivityThreshold >= 0 && obj.sensitivityThreshold <= 1 &&
+    typeof obj.enabledTactics === 'object' &&
+    typeof obj.enabledPlatforms === 'object'
+  );
+}
+
 async function loadSettings(): Promise<void> {
   try {
     const result = await chrome.storage.local.get('settings');
-    if (result.settings) {
+    if (isValidSettings(result.settings)) {
       settings = result.settings;
     }
   } catch {
@@ -107,9 +119,9 @@ async function init(): Promise<void> {
     subtree: true,
   });
 
-  // Listen for settings changes
+  // Listen for settings changes — validate before applying
   chrome.storage.onChanged.addListener((changes) => {
-    if (changes.settings) {
+    if (changes.settings && isValidSettings(changes.settings.newValue)) {
       settings = changes.settings.newValue;
       if (!settings.enabled) {
         observer.disconnect();

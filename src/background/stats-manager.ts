@@ -1,9 +1,32 @@
 import { TacticType, AnalysisResult } from '../types/analysis';
 import { SessionStats, DailyStats, createEmptySessionStats } from '../types/storage';
 
+const VALID_TACTICS = new Set<string>([
+  'scarcity', 'urgency', 'social_proof', 'authority', 'fear_appeal',
+  'identity', 'reciprocity', 'anchoring', 'bandwagon',
+  'emotional_manipulation', 'false_dilemma', 'loaded_language',
+]);
+
+const VALID_RISK_LEVELS = new Set<string>(['low', 'medium', 'high']);
+
+function isValidSessionStats(data: unknown): data is SessionStats {
+  if (!data || typeof data !== 'object') return false;
+  const obj = data as Record<string, unknown>;
+  return (
+    typeof obj.postsAnalysed === 'number' &&
+    typeof obj.tacticsDetected === 'number' &&
+    typeof obj.tacticCounts === 'object' &&
+    typeof obj.riskLevelCounts === 'object' &&
+    Array.isArray(obj.influenceScores)
+  );
+}
+
 export async function getSessionStats(): Promise<SessionStats> {
   const result = await chrome.storage.local.get('sessionStats');
-  return result.sessionStats || createEmptySessionStats();
+  if (isValidSessionStats(result.sessionStats)) {
+    return result.sessionStats;
+  }
+  return createEmptySessionStats();
 }
 
 export async function updateSessionStats(
@@ -15,11 +38,15 @@ export async function updateSessionStats(
   stats.tacticsDetected += analysis.tactics.length;
 
   for (const tactic of analysis.tactics) {
-    stats.tacticCounts[tactic.tactic] =
-      (stats.tacticCounts[tactic.tactic] || 0) + 1;
+    if (VALID_TACTICS.has(tactic.tactic)) {
+      stats.tacticCounts[tactic.tactic] =
+        (stats.tacticCounts[tactic.tactic] || 0) + 1;
+    }
   }
 
-  stats.riskLevelCounts[analysis.riskLevel]++;
+  if (VALID_RISK_LEVELS.has(analysis.riskLevel)) {
+    stats.riskLevelCounts[analysis.riskLevel]++;
+  }
   stats.influenceScores.push(analysis.influenceScore);
 
   // Keep last 1000 scores to avoid unbounded growth

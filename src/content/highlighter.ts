@@ -109,13 +109,19 @@ function addInfluenceBadge(
   badge.title = `Influence Score: ${result.influenceScore}/100 (${result.riskLevel} risk)`;
 
   const color = BADGE_COLORS[result.riskLevel];
-  badge.style.cssText = `
-    display: inline-flex; align-items: center; justify-content: center;
-    padding: 2px 8px; border-radius: 12px; font-size: 11px;
-    font-weight: 600; margin-left: 8px; background: ${color};
-    color: white; font-family: -apple-system, sans-serif;
-    vertical-align: middle; line-height: 1;
-  `;
+  badge.style.display = 'inline-flex';
+  badge.style.alignItems = 'center';
+  badge.style.justifyContent = 'center';
+  badge.style.padding = '2px 8px';
+  badge.style.borderRadius = '12px';
+  badge.style.fontSize = '11px';
+  badge.style.fontWeight = '600';
+  badge.style.marginLeft = '8px';
+  badge.style.backgroundColor = color;
+  badge.style.color = 'white';
+  badge.style.fontFamily = '-apple-system, sans-serif';
+  badge.style.verticalAlign = 'middle';
+  badge.style.lineHeight = '1';
 
   const header = postElement.querySelector(
     '[data-testid="User-Name"], .feed-shared-actor__title, .Post__header'
